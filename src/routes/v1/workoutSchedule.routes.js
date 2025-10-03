@@ -9,7 +9,7 @@ const {
   deleteWorkoutSchedule
 } = require("../../controllers/workoutSchedule.controller");
 
-// Endpoints
+// Endpoint
 router.get("/", getWorkoutSchedules);
 router.get("/:id", getWorkoutScheduleById);
 router.post("/", createWorkoutSchedule);

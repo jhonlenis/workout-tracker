@@ -11,7 +11,7 @@ let exercises = [
   }
 ];
 
-// GET /exercises
+// GET 
 const getExercises = (req, res) => {
   const { categoria, grupo_muscular, search } = req.query;
   let result = exercises;

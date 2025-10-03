@@ -15,6 +15,7 @@ let users = [
 const getUserById = (req, res) => {
   const { id } = req.params;
   const user = users.find(u => u.id === id);
+  //nuevo comentario
 
   if (!user) {
     return res.status(404).json({ error: 'Usuario no encontrado' });

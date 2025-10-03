@@ -45,7 +45,7 @@ const getExerciseById = (req, res) => {
   res.status(200).json(exercise);
 };
 
-// POST /exercises
+// POST 
 const createExercise = (req, res) => {
   const { nombre, descripcion, categoria, grupo_muscular } = req.body;
 

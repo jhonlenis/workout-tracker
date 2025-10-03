@@ -33,7 +33,7 @@ const getExercises = (req, res) => {
   res.status(200).json(result);
 };
 
-// GET /exercises/:id
+// GET /exercises
 const getExerciseById = (req, res) => {
   const { id } = req.params;
   const exercise = exercises.find(e => e.id === id);

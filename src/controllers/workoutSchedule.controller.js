@@ -1,6 +1,6 @@
 // src/controllers/workoutSchedule.controller.js
 
-// Estado en memoria (simulación)
+// Estado en memoria (
 let workoutSchedules = [
   {
     id: "4001",

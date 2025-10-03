@@ -10,7 +10,7 @@ let workoutExercises = [
   }
 ];
 
-// GET /workoutExercises?plan_id=2001&ejercicio_id=101
+// GET /workoutExercises
 const getAllWorkoutExercises = (req, res) => {
   const { plan_id, ejercicio_id } = req.query;
   let result = workoutExercises;

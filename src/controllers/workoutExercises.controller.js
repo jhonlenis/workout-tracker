@@ -1,4 +1,4 @@
-// Estado en memoria (simulación)
+// Estado en memoria 
 let workoutExercises = [
   {
     id: 301,

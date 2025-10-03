@@ -25,6 +25,15 @@ const getWorkoutPlans = (req, res) => {
   res.status(200).json(result);
 };
 
+// Get:id
+const getWorkoutPlanById = (req, res) => {
+  const { id } = req.params;
+  const plan = workoutPlans.find(p => p.id === id);
+
+  if (!plan) return res.status(404).json({ error: "Plan no encontrado" });
+
+  res.status(200).json(plan);
+};
 
 // Post
 const createWorkoutPlan = (req, res) => {

@@ -9,7 +9,7 @@ const {
   deleteWorkoutReport
 } = require("../../controllers/workoutReports.controller");
 
-// Rutas de workoutReports
+// Rutas de workoutReport
 router.get("/", getWorkoutReports);
 router.get("/:id", getWorkoutReportById);
 router.post("/", createWorkoutReport);

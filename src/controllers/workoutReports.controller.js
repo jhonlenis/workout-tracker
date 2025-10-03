@@ -79,17 +79,7 @@ const updateWorkoutReport = (req, res) => {
     return res.status(404).json({ error: "Reporte no encontrado" });
   }
 
-  workoutReports[index] = {
-    ...workoutReports[index],
-    fecha_inicio: fecha_inicio || workoutReports[index].fecha_inicio,
-    fecha_fin: fecha_fin || workoutReports[index].fecha_fin,
-    total_entrenamientos: total_entrenamientos ?? workoutReports[index].total_entrenamientos,
-    ejercicios_mas_frecuentes: ejercicios_mas_frecuentes || workoutReports[index].ejercicios_mas_frecuentes,
-    mejora_por_grupo_muscular: mejora_por_grupo_muscular || workoutReports[index].mejora_por_grupo_muscular
-  };
-
-  res.status(200).json(workoutReports[index]);
-};
+ 
 
 // DELETE /workoutReports/:id
 const deleteWorkoutReport = (req, res) => {

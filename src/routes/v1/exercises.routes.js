@@ -8,7 +8,7 @@ const {
   updateExercise,
   deleteExercise
 } = require("../../controllers/exercises.controller");
-
+// Definir las rutas para ejercicios
 router.get("/", getExercises);
 router.get("/:id", getExerciseById);
 router.post("/", createExercise);

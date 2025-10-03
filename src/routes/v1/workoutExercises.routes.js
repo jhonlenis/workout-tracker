@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const workoutExercisesController = require("../../controllers/workoutExercises.controller");
 
-// Definir endpoints y enlazarlos al controlador
+// Definir endpoints 
 router.get("/", workoutExercisesController.getAllWorkoutExercises);
 router.get("/:id", workoutExercisesController.getWorkoutExerciseById);
 router.post("/", workoutExercisesController.createWorkoutExercise);

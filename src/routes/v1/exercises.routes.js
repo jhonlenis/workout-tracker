@@ -14,5 +14,5 @@ router.get("/:id", getExerciseById);
 router.post("/", createExercise);
 router.put("/:id", updateExercise);
 router.delete("/:id", deleteExercise);
-
+// Exportar el router
 module.exports = router;

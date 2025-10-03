@@ -3,7 +3,7 @@ let workoutPlans = [
     id: "2001",
     usuario_id: 1,
     fecha_creacion: "2025-09-10T09:00:00Z",
-    comentarios: "Plan de hipertrofia para 3 meses"
+    comentarios: "Plan de hipertrofia para 2 meses"
   }
 ];
 
